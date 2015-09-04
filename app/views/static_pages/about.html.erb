@@ -1,8 +1,20 @@
+<link rel="stylesheet" type="text/css" href="application.css">
+<div class = "background_2">
+<ul>
 <% @characters.each do |character| %>
-<p>Name:<%= character.name %></p>
-<p>abilities:</p>
-  <% character.abilities.each do |ability| %>
-    <p><%= ability.name %></p>
+  <h1>Identity:<%= character.identity %></h1>
+  <li>Name:<%= character.name %></li>
+  <li>Weight:<%= character.weight %></li>
+  <li>Height:<%= character.height %></li>
+    <% if character.hero == false %>
+      <li> Villain </li>
+    <% else %>
+      <li> Hero </li>
+    <% end %>
+    <% character.abilities.each do |ability| %>
+      <li><%= ability.name %></li>
+      <li><%= ability.description %></li>
   <% end %>
-
 <% end %>
+<ul>
+</div>

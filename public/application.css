@@ -1,0 +1,30 @@
+body {
+    background:url(http://www.enterprisenews.com/storyimage/ZZ/20150327/NEWS/303279994/AR/0/AR-303279994.jpg) no-repeat center center fixed ;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+}
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+.navbar{
+  text-align: center;
+}
