@@ -3,5 +3,8 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+    @characters = Character.all
+    # @abilities = Ability.find(params[:id])
   end
+
 end
