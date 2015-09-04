@@ -1,3 +1,8 @@
 <% @characters.each do |character| %>
 <p>Name:<%= character.name %></p>
+<p>abilities:</p>
+  <% character.abilities.each do |ability| %>
+    <p><%= ability.name %></p>
+  <% end %>
+
 <% end %>

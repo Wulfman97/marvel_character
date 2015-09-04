@@ -6,6 +6,8 @@ class CreateCharacters < ActiveRecord::Migration
       t.string :height
       t.string :weight
       t.boolean :hero
+      t.string :ability
+      t.string :description
 
       t.timestamps null: false
     end
